@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/Logo Figura.png">
+    <title>Buscador de Recetas</title>
+    <link rel="stylesheet" href="assets/estilos/styleBus.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/imagenes/LOGO_2-removebg-preview.png" alt="Logo Sabores Magistrales">
+        </div>
+        <button class="menu-btn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recetario.html">Recetas</a></li>
+                <li><a href="calculadoras.html">Calculadoras</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="search-box">
+            <h2>Buscar alguna Receta?</h2>
+            <input type="text" id="searchInput" placeholder="Ingrese el plato que desea buscar">
+            <button onclick="searchRecipes()">Buscar</button>
+        </div>
+
+        <div id="recipeResults"></div>
+    </div>
+    <script src="assets/java/buscador.js"></script>
+</body>
+</html>

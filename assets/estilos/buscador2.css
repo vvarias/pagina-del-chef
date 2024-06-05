@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0ffeb94;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e91e63;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    height: 30px;
+}
+header a.logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 10px;
+}
+.logo img {
+    max-height: 50px;
+    text-align: left;
+    padding: 0 30px;
+    margin: -10px;
+}
+header a.back-arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: -30px 0;
+    display: flex;
+    justify-content: right;
+    background-color: #e91e63;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+}
+.recipe-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recipe-header img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-box {
+    background-color: #ffe0b2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#recipeResults {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.recipe {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+h1 {
+    text-align: center;
+    color: #ed1b79;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8e8ba;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffb15e;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#nombreReceta {
+    margin-top: 0;
+}
+
+#recetas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recetas li {
+    background-color: #f8bd8ab1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+footer {
+    background-color: #a5d8af;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-content img {
+    width: 100px;
+    margin-bottom: 10px;
+text-align: left;
+}
+
+.footer-content h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.comprar-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.comprar-btn:hover {
+    background-color: #45a049;
+}
+
+.social-media a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666;
+}
+.social-media a img {
+    width: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"], button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+}

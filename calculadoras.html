@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/Logo Figura.png">
+    <title>Conversores - Sabores Magistrales</title>
+    <link rel="stylesheet" href="assets/estilos/calculadora.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/imagenes/LOGO_2-removebg-preview.png" alt="Logo Sabores Magistrales">
+        
+        <a href="index.html" class="back-arrow">←</a>
+        <button class="menu-btn">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recetario.html">Recetas</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
+                <li><a href="buscador2.html">Buscador</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="liquidas" class="converter">
+            <h2>1. Conversor de medidas líquidas</h2>
+</head>
+<body>
+
+<div class="container">
+    <h1>Conversión de volumen</h1>
+    <div class="form-group">
+        <label for="valor">Medición tipo 1</label>
+        <input type="number" id="valor" placeholder="Ingresar valor">
+        <select id="unidad-origen">
+            <option value="ml">mililitros (ml)</option>
+            <option value="l">litros (l)</option>
+            <option value="gal_us">galones (US)</option>
+            <option value="gal_uk">galones (UK)</option>
+            <option value="oz_us">onzas líquidas (US)</option>
+            <option value="oz_uk">onzas líquidas (UK)</option>
+            <option value="pt_us">pintas (US)</option>
+            <option value="pt_uk">pintas (UK)</option>
+            <option value="qt_us">cuartos (US)</option>
+            <option value="qt_uk">cuartos (UK)</option>
+            <option value="cup">tazas</option>
+            <option value="in³">pulgadas cúbicas (in³)</option>
+            <option value="ft³">pies cúbicos (ft³)</option>
+            <option value="yd³">yardas cúbicas (yd³)</option>
+            <option value="m³">metros cúbicos (m³)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="resultado">Hasta</label>
+        <input type="text" id="resultado" readonly>
+        <select id="unidad-destino">
+            <option value="ml">mililitros (ml)</option>
+            <option value="l">litros (l)</option>
+            <option value="gal_us">galones (US)</option>
+            <option value="gal_uk">galones (UK)</option>
+            <option value="oz_us">onzas líquidas (US)</option>
+            <option value="oz_uk">onzas líquidas (UK)</option>
+            <option value="pt_us">pintas (US)</option>
+            <option value="pt_uk">pintas (UK)</option>
+            <option value="qt_us">cuartos (US)</option>
+            <option value="qt_uk">cuartos (UK)</option>
+            <option value="cup">tazas</option>
+            <option value="in³">pulgadas cúbicas (in³)</option>
+            <option value="ft³">pies cúbicos (ft³)</option>
+            <option value="yd³">yardas cúbicas (yd³)</option>
+            <option value="m³">metros cúbicos (m³)</option>
+        </select>
+    </div>
+    <button class="temperatura" onclick="convertir()">Convertir</button>
+    <div class="result" id="conversion"></div>
+</div>
+ </section>
+    <section id="temperatura" class="converter">
+    <h2>2. Conversor de temperatura</h2>
+</head>
+<body>
+
+<div class="container">
+    <h1>Conversión de temperatura</h1>
+    <div class="form-group">
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" placeholder="°C">
+        <span class="unit">°C</span>
+    </div>
+    <div class="form-group">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" placeholder="°F">
+        <span class="unit">°F</span>
+    </div>
+    <div class="form-group">
+        <label for="kelvin">Kelvin:</label>
+        <input type="number" id="kelvin" placeholder="K">
+        <span class="unit">K</span>
+    </div>
+    <div class="form-group">
+        <label for="rankine">Rankine:</label>
+        <input type="number" id="rankine" placeholder="°R">
+        <span class="unit">°R</span>
+    </div>
+    <button class="temperatura" onclick="convertirtem()">Convertir</button>
+</div>
+</body>
+</html>
+        </section>
+        <section id="peso" class="converter">
+            <h2>3. Conversor de medidas de peso</h2>
+            <div class="container">
+                <h1>Conversión de peso</h1>
+                <div class="form-group">
+                    <label for="inputValue">Medición tipo 1</label>
+                    <input type="number" id="inputValue" placeholder="Ingresar valor...">
+                    <select id="inputUnit">
+                        <option value="mt">mt</option>
+                        <option value="kg">kg</option>
+                        <option value="g">g</option>
+                        <option value="lb">lb</option>
+                        <option value="oz">oz</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="outputValue">Hasta</label>
+                    <input type="number" id="outputValue" placeholder="Ingresar valor..." readonly>
+                    <select id="outputUnit">
+                        <option value="mt">mt</option>
+                        <option value="kg">kg</option>
+                        <option value="g">g</option>
+                        <option value="lb">lb</option>
+                        <option value="oz">oz</option>
+                    </select>
+                    <button class="temperatura" onclick="convertWeight()">Convertir</button>
+                </div>
+            </div>
+    
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="assets/imagenes/logo-removebg-preview.png" alt="Sabores Magistrales Gordon Ramsay">
+            <h2>Sabores Magistrales</h2>
+            <p>Valeria Arias.</p>
+            <div class="social-media">
+                <a href="https://x.com/GordonRamsay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/imagenes/twitterLogo.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/gordongram?igsh=ejY0NmM1M3J6Nmdi"><img src="assets/imagenes/instaLogo.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/gordonramsay/?locale=es_LA"><img src="assets/imagenes/facebookLogo.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Proyecto Final</p>
+    </footer>
+    <script src="assets/java/calculadoras.js"></script>
+</body>
+</html>
